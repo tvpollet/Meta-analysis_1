@@ -174,7 +174,7 @@ reviews are often used to test just a single hypothesis, or a series of related 
 **Meta-analysis**
 
 "A review that uses a specific statistical technique for synthesizing the results of several studies into a single
-quantitative estimate (i.e. a summary effect size)" ([Petticrew &amp; Roberts, 2006](https://books.google.co.uk/books?id=ZwZ1_xU3E80C&amp;lpg=PR5&amp;ots=wYT6sNGQMu&amp;dq=petticrew%20roberts&amp;lr&amp;pg=PR5#v=onepage&amp;q=petticrew%20roberts&amp;f=false).
+quantitative estimate (i.e. a summary effect size)" ([Petticrew &amp; Roberts, 2006])(https://books.google.co.uk/books?id=ZwZ1_xU3E80C&amp;lpg=PR5&amp;ots=wYT6sNGQMu&amp;dq=petticrew%20roberts&amp;lr&amp;pg=PR5#v=onepage&amp;q=petticrew%20roberts&amp;f=false).
 
 ---
 ## What is the relationship between a systematic review and meta-analysis
@@ -435,9 +435,9 @@ Purpose:
 &lt;img src="Reviewer2.jpg" width="300px" style="display: block; margin: auto;" /&gt;
 
 ---
-##
+## What can be coded?
 
-Thomas goes to GoSoapbox.
+**Thomas goes to GoSoapbox.**
 
 ---
 ## What can be coded?
@@ -503,9 +503,6 @@ Descriptors of paper:
 Use [this](http://prisma.thetacollaborative.ca/) to do so online.
 
 &lt;img src="PRISMA_2009_flow_diagram.png" width="300px" style="display: block; margin: auto;" /&gt;
-
----
-##
 
 ---
 ## Steps in a meta-analyis.
@@ -647,7 +644,7 @@ Sys.time()
 ```
 
 ```
-## [1] "2019-08-30 13:47:55 BST"
+## [1] "2019-08-30 14:30:59 BST"
 ```
 
 ---
@@ -673,15 +670,7 @@ library(ggplot2) #loading ggplot2
 ```
 
 
-```r
-library(ggplot2) #loading ggplot2
-```
-
-```
-## Warning: package 'ggplot2' was built under R version 3.5.2
-```
-
-'#' to write comments in your code
+'#' to write comments in your code, which does not get read. If you know [Latex](https://www.latex-project.org/), you  can also incorporate this (as with .html)
 
 ---
 ## R as a calculator. {.build}
@@ -808,7 +797,250 @@ length(number_of_coffees_a_week) # how many elements
 ```
 
 ---
-##
+## Days of the week.
+
+
+```r
+days&lt;-c("Mon","Tues","Wed","Thurs","Friday", "Sat", "Sun")
+days
+```
+
+```
+## [1] "Mon"    "Tues"   "Wed"    "Thurs"  "Friday" "Sat"    "Sun"
+```
+
+```r
+days[5] # print element number 5 -- Friday
+```
+
+```
+## [1] "Friday"
+```
+
+```r
+days[c(1,2,3)] # print elements 1,2,3
+```
+
+```
+## [1] "Mon"  "Tues" "Wed"
+```
+
+---
+## Replacing things.
+
+```r
+days[5]&lt;-"Fri" # replace Friday with Fri
+days
+```
+
+```
+## [1] "Mon"   "Tues"  "Wed"   "Thurs" "Fri"   "Sat"   "Sun"
+```
+
+```r
+days[c(6,7)] &lt;- rep("Party time",2) # write Sat and Sun as Party time
+days
+```
+
+```
+## [1] "Mon"        "Tues"       "Wed"        "Thurs"      "Fri"       
+## [6] "Party time" "Party time"
+```
+
+---
+## Try it yourself (in duos)
+
+Use # to annotate your code.
+
+1. Make an atomic vector with your height. If you don't know your metric height: 'guess'.
+2. Make a vector for the months of the year.
+3. Print the 6th and 9th month
+4. Replace the July/August with vacation in your vector.
+
+---
+## Special Values
+
+ **NULL**		object of zero length, test with is.null(x) 
+
+ **NA**		Not Available / missing value, test with is.na(x)
+
+ **NaN**		Not a number, test with is.nan(x) (e.g. 0/0, log(-1))
+
+ **Inf, -Inf**	Positive/negative infinity, test with is.infinite(x) (e.g. 1/0)
+
+---
+## Is.numeric / etc.
+
+```r
+is.numeric(thomas_age)
+```
+
+```
+## [1] TRUE
+```
+
+```r
+is.numeric(days)
+```
+
+```
+## [1] FALSE
+```
+
+```r
+is.atomic(thomas_age)
+```
+
+```
+## [1] TRUE
+```
+
+```r
+is.character(days)[1]
+```
+
+```
+## [1] TRUE
+```
+
+---
+## Checking for missings: is.na() 
+
+
+```r
+is.na(thomas_age)
+```
+
+```
+## [1] FALSE
+```
+
+```r
+is.na(days)
+```
+
+```
+## [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+```
+---
+## Combining vectors into a matrix.
+
+Combining vectors is easy, use c(vector1,vector2)
+
+Combining column vectors into one matrix goes as follows.
+
+ **cbind()** column bind
+
+ **rbind()** row bind
+
+---
+## Example with coffee data
+
+```r
+coffee_data&lt;-cbind(number_of_coffees_a_week,days)
+coffee_data # this is what the matrix looks like.
+```
+
+```
+##      number_of_coffees_a_week days        
+## [1,] "1"                      "Mon"       
+## [2,] "2"                      "Tues"      
+## [3,] "0"                      "Wed"       
+## [4,] "0"                      "Thurs"     
+## [5,] "1"                      "Fri"       
+## [6,] "4"                      "Party time"
+## [7,] "5"                      "Party time"
+```
+
+```r
+coffee_data&lt;-as.data.frame(coffee_data) # make it a dataframe.
+is.data.frame(coffee_data)
+```
+
+```
+## [1] TRUE
+```
+---
+## Try it yourself. 
+Together with your partner:
+
+1. combine the two vectors with your heights. (Remember the order!) (or make a new one!)
+2. make a vector with your ages (in the same order as 1.)
+3. make a dataframe called 'team' using cbind
+4. check that it is a dataframe.
+
+---
+## Making a matrix from scratch.
+
+```r
+# nr: nrow / nc; ncol
+matrix(data=5, nr=2, nc=2)
+```
+
+```
+##      [,1] [,2]
+## [1,]    5    5
+## [2,]    5    5
+```
+
+```r
+matrix(1:8, 2, 4)
+```
+
+```
+##      [,1] [,2] [,3] [,4]
+## [1,]    1    3    5    7
+## [2,]    2    4    6    8
+```
+
+```r
+as.data.frame(matrix(1:8,2,4))
+```
+
+```
+##   V1 V2 V3 V4
+## 1  1  3  5  7
+## 2  2  4  6  8
+```
+---
+## Setting a work directory.
+
+Normally you would do this at the start of your session. If you don't it'll live where your file lives. Which isn't always bad (and)
+
+So, this is where you would read and write data,... .
+
+```r
+setwd("~/Dropbox/Teaching_MRes_Northumbria/Lecture1") 
+# the tilde just abbreviates the bits before
+# mostly you would use setwd("C:/Documents/Rstudio/assignment1") 
+# for windows. Dont use \ 
+# Linux: setwd("/usr/thomas/mydir")
+```
+---
+## Writing away data.
+ One of the most versatile formats is .csv 
+
+ comma separated value file (readable in MS Excel)
+
+```r
+write.csv(coffee_data, file= 'coffee_data.csv')
+### no row names.
+write.csv(coffee_data, file= 'coffee_data.csv', row.names=FALSE)
+### ??write.csv to find out more
+```
+
+ SPSS (install 'haven' first!) , note the **different** notation!
+ 
+
+```r
+require(haven)
+write_sav(coffee_data, 'coffee_data.sav')
+```
+
+---
+## First useful thing?
+
+Now use a package to make a PRISMA flow chart.
 
 ---
 ## PRISMA flow chart in R.
@@ -831,10 +1063,24 @@ prisma(found = 750,
 ## Output chart
 
 &lt;div class="figure" style="text-align: center"&gt;
-<div id="htmlwidget-af94f093fffe676cf209" style="width:500px;height:504px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-af94f093fffe676cf209">{"x":{"diagram":"digraph prisma {\n    node [shape=\"box\", fontsize = 10];\n    graph [splines=ortho, nodesep=1, dpi = 72]\n    a -> nodups;\n    b -> nodups;\n    a [label=\"Records identified through\ndatabase searching\n(n = 750)\"];\n    b [label=\"Additional records identified\nthrough other sources\n(n = 123)\"]\n    nodups -> incex;\n    nodups [label=\"Records after duplicates removed\n(n = 776)\"];\n    incex -> {ex; ft}\n    incex [label=\"Records screened\n(n = 776)\"];\n    ex [label=\"Records excluded\n(n = 13)\"];\n    {rank=same; incex ex}\n    ft -> {qual; ftex};\n    ft [label=\"Full-text articles assessed\nfor eligibility\n(n = 763)\"];\n    {rank=same; ft ftex}\n    ftex [label=\"Full-text articles excluded,\nwith reasons\n(n = 17)\"];\n    qual -> quant\n    qual [label=\"Studies included in qualitative synthesis\n(n = 746)\"];\n    quant [label=\"Studies included in\nquantitative synthesis\n(meta-analysis)\n(n = 319)\"];\n  }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-3558701c63a966135df3" style="width:450px;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3558701c63a966135df3">{"x":{"diagram":"digraph prisma {\n    node [shape=\"box\", fontsize = 10];\n    graph [splines=ortho, nodesep=1, dpi = 72]\n    a -> nodups;\n    b -> nodups;\n    a [label=\"Records identified through\ndatabase searching\n(n = 750)\"];\n    b [label=\"Additional records identified\nthrough other sources\n(n = 123)\"]\n    nodups -> incex;\n    nodups [label=\"Records after duplicates removed\n(n = 776)\"];\n    incex -> {ex; ft}\n    incex [label=\"Records screened\n(n = 776)\"];\n    ex [label=\"Records excluded\n(n = 13)\"];\n    {rank=same; incex ex}\n    ft -> {qual; ftex};\n    ft [label=\"Full-text articles assessed\nfor eligibility\n(n = 763)\"];\n    {rank=same; ft ftex}\n    ftex [label=\"Full-text articles excluded,\nwith reasons\n(n = 17)\"];\n    qual -> quant\n    qual [label=\"Studies included in qualitative synthesis\n(n = 746)\"];\n    quant [label=\"Studies included in\nquantitative synthesis\n(meta-analysis)\n(n = 319)\"];\n  }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 &lt;p class="caption"&gt;PRISMA Flow chart&lt;/p&gt;
 &lt;/div&gt;
+---
+## Exercise... .
+
+Load the flights dataset.
+
+Calculate the mean delay in arrival for Delta Airlines (DL) (use filter())
+
+Calculate the associated 95% confidence interval.
+
+Do the same for United Airlines (UA) and compare the two. Do their confidence intervals overlap?
+
+Calculate the mode for the delay in arrival for at JFK airport.
+
+save a dataset as .sav with only departing flights from JFK airport.
 
 ---
 ## Any Questions?
