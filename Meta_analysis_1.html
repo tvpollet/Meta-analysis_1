@@ -17,7 +17,7 @@ class: center, middle, inverse, title-slide
 
 # Meta-analysis course: part 1 : Systematic reviews, meta-analysis, and introduction to R
 ### Thomas Pollet (<span class="citation">@tvpollet</span>), Northumbria University
-### 2019-08-30 | <a href="http://tvpollet.github.io/disclaimer">disclaimer</a>
+### 2019-09-03 | <a href="http://tvpollet.github.io/disclaimer">disclaimer</a>
 
 ---
 
@@ -59,7 +59,11 @@ Enter code: 257883396
 
 * Textbook examples. Problematic.
 
+--
+
 What is a seminal single study in your field?
+
+&lt;img src="https://media.giphy.com/media/QWA9p190VpNLxO1ryW/giphy.gif" width="300px" style="display: block; margin: auto;" /&gt;
 
 ---
 ## Synthesis
@@ -94,12 +98,20 @@ Traditional narrative reviews are biased:
   - Hard to reconstruct. Roberts et al. (2006) analysed 73 reviews in the area of conservation management, only 30% reported which sources were consulted for the review (N=73). Thus, likely reflects reviewer bias,... .
   - Typical focus on dichotomous statistical significance testing (blinded by _p_ values). Effect found or not. (Publication bias)
 
+&lt;img src="https://media.giphy.com/media/QWA9p190VpNLxO1ryW/giphy.gif" width="250px" style="display: block; margin: auto;" /&gt;
+
 ---
 ## Vote counting.
 
-In its simplest form, 3 categories : Significant + / Non-significant / Significant - . Alternative forms: linear + , linear -, curvilinear (different shapes possible), ... , no effect.
+In its simplest form, 3 categories : Significant + / Non-significant / Significant - . 
+
+Alternative forms: linear + , linear -, curvilinear (different shapes possible), ... , no effect.
+
+--
 
 Advantage: simple/broadly applicable.
+
+--
 
 Disadvantages:
 
@@ -119,7 +131,7 @@ Exists since Fisher (1946). Quite popular in social sciences.
 Basically tallying _p_ values. Most common is summing across a normal distribution
 
 &lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="Youngronaldfisher2.jpg" alt="Ronald Fisher (1913)" width="600px" /&gt;
+&lt;img src="Youngronaldfisher2.jpg" alt="Ronald Fisher (1913)" width="400px" /&gt;
 &lt;p class="caption"&gt;Ronald Fisher (1913)&lt;/p&gt;
 &lt;/div&gt;
 ---
@@ -127,9 +139,19 @@ Basically tallying _p_ values. Most common is summing across a normal distributi
 
 A plus is that it is broadly applicable (widespread use of _p_ values).
 
-Solves some of the issues with vote counting: _p_ = .04 and _p_ = .06 . However, as with vote counting not very informative.
+--
+
+Solves some of the issues with vote counting: _p_ = .04 and _p_ = .06 . 
+
+--
+
+However, as with vote counting not very informative.
+
+--
 
 Small _p_ value large effect (but uncertain?) or large sample size (with small effect size)
+
+--
 
 Too liberal, if many tests and one low _p_ nearly always significant (Cooper, 2010:160)
 
@@ -142,11 +164,13 @@ Systematic, structured and objective.
 
 Documentation of all research steps (literature retrieval, data entry, coding, etc.) and relevant decisions
 
+&lt;img src="https://media.giphy.com/media/8FiRcf3XYx2i4/giphy.gif" width="250px" style="display: block; margin: auto;" /&gt;
+
 ---
 ## Comparison of methods
 
 &lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="Table1.1_Koricheva.png" alt="Comparison of methods by Koricheva et al. 2013" width="600px" /&gt;
+&lt;img src="Table1.1_Koricheva.png" alt="Comparison of methods by Koricheva et al. 2013" width="625px" /&gt;
 &lt;p class="caption"&gt;Comparison of methods by Koricheva et al. 2013&lt;/p&gt;
 &lt;/div&gt;
 
@@ -174,7 +198,7 @@ reviews are often used to test just a single hypothesis, or a series of related 
 **Meta-analysis**
 
 "A review that uses a specific statistical technique for synthesizing the results of several studies into a single
-quantitative estimate (i.e. a summary effect size)" ([Petticrew &amp; Roberts, 2006])(https://books.google.co.uk/books?id=ZwZ1_xU3E80C&amp;lpg=PR5&amp;ots=wYT6sNGQMu&amp;dq=petticrew%20roberts&amp;lr&amp;pg=PR5#v=onepage&amp;q=petticrew%20roberts&amp;f=false).
+quantitative estimate (i.e. a summary effect size)" ([Petticrew &amp; Roberts, 2006](https://books.google.co.uk/books?id=ZwZ1_xU3E80C&amp;lpg=PR5&amp;ots=wYT6sNGQMu&amp;dq=petticrew%20roberts&amp;lr&amp;pg=PR5#v=onepage&amp;q=petticrew%20roberts&amp;f=false)).
 
 ---
 ## What is the relationship between a systematic review and meta-analysis
@@ -268,16 +292,18 @@ We can categorise based on:
 
 * Analysis of between-study variation via meta-regression is inherently correlational.
 
-&lt;img src="limitation.jpg" width="300px" style="display: block; margin: auto;" /&gt;
+&lt;img src="limitation.jpg" width="275px" style="display: block; margin: auto;" /&gt;
 
 ---
 ## Common Criticisms.
 
-* Apples and oranges: Interest lays in 'fruit salad' / Heterogeneity
+* Apples and oranges: Interest lays in 'fruit salad' / Heterogeneity.
 
 * _Garbage in / Garbage out_ : Meta-analysis is nothing more than waste management? Solution: Systematically examine the quality of studies (coding) and examine differences in outcomes.
 
 * Missing data / publication bias: Affects _any_ kind of research. Meta-analysis allows for methods addressing these problems.
+
+&lt;img src="https://giphy.com/gifs/trash-awful-garbage-yRNSxsl1rJEwU" width="300px" style="display: block; margin: auto;" /&gt;
 
 ---
 ## Common Myths about meta-analysis (Littell et al. 2001)
@@ -285,6 +311,8 @@ We can categorise based on:
 * Meta-analyses require a medical perspective and require experimental data on treatments (RCT) --&gt; False. (e.g., meta-analysis on observed correlations, prevalence, etc.)
 
 * Meta-analyses require large number of studies and/or large sample sizes --&gt; False. Sometimes just 2(!)
+
+&lt;img src="https://giphy.com/gifs/the-x-files-3oEdvddejaTWNpNCTK" width="300px" style="display: block; margin: auto;" /&gt;
 
 ---
 ## Golden standards in systematic reviews / meta-analyis.
@@ -297,7 +325,7 @@ Not many do so in (Evolutionary) Psychology and related fields.
 * [PRISMA guidelines](http://prisma-statement.org/). Detailed [checklist](http://prisma-statement.org/documents/PRISMA%202009%20checklist.pdf)
 
 
-&lt;img src="https://media.giphy.com/media/l0HlKB7bThU9CzTqM/giphy.gif" width="600px" style="display: block; margin: auto;" /&gt;
+&lt;img src="https://media.giphy.com/media/l0HlKB7bThU9CzTqM/giphy.gif" width="300px" style="display: block; margin: auto;" /&gt;
 
 
 ---
@@ -315,6 +343,8 @@ Overview and then we'll zoom in on some steps,... .
 * Interpreting the evidence
 * Presenting the results
 
+(incidentally 9 according to [this paper](https://peerj.com/preprints/2978/).)
+
 ---
 ## Formulating the problem.
 
@@ -322,7 +352,7 @@ Overview and then we'll zoom in on some steps,... .
 
 --
 
-**A** Define:
+**A**: Define:
 
 - Variables of interest.
 - research designs
@@ -385,7 +415,7 @@ Again, procedural variations might influence which studies remain included and w
 
 **Q**: How should we combine and summarise the research results?
 
-**A** Decide on how to combine results across studies and how to test for substantial differences between studies.
+**A**: Decide on how to combine results across studies and how to test for substantial differences between studies.
 
 Surprise: There could be variations... (i.e., choice of effect size measure)
 
@@ -466,7 +496,7 @@ Note some redundant:
 ## Study descriptors.
 
 Theoretical variables:
-* For example on economic games.
+* For example on economic games. Degree of control player A has over B
 
 Methods and procedures:
 
@@ -497,6 +527,8 @@ Descriptors of paper:
 
 * [Metagear](http://lajeunesse.myweb.usf.edu/metagear/metagear_basic_vignette.html) in R. Mostly for reviewing abstracts.
 
+&lt;img src="https://media.giphy.com/media/3oKIPqsXYcdjcBcXL2/giphy.gif" width="350px" style="display: block; margin: auto;" /&gt;
+
 ---
 ## Flow Chart.
 
@@ -524,6 +556,10 @@ Overview and then we'll zoom in on some steps,... .
 
 * [PRISMA](http://www.prisma-statement.org/)
 
+
+&lt;img src="https://media.giphy.com/media/26BGGp9NoFefWZFPG/giphy.gif" width="350px" style="display: block; margin: auto;" /&gt;
+
+
 ---
 ## Software packages.
 
@@ -532,6 +568,8 @@ Overview and then we'll zoom in on some steps,... .
 * [CMA](https://www.meta-analysis.com/) --&gt; extensive and good support but "pay to play". Other packages also exist.
 
 * [R](https://cran.r-project.org/) --&gt; Free, reproducible, modifiable for your purposes. [JASP](https://jasp-stats.org) relies on R and can do many of the things I'll cover... .
+
+&lt;img src="https://media.giphy.com/media/bxYGpFWlvuWnC/giphy.gif" width="300px" style="display: block; margin: auto;" /&gt;
 
 ---
 ## I already know R...
@@ -601,11 +639,19 @@ Press the knit button!
 
  Congrats. You generated a webpage!
 
+--
+
  The bit between the ticks are R code. The text in between is [Markdown](https://www.markdownguide.org/). A very simple language.
+
+--
 
  Occasionally .html or . latex code interspersed.
 
+--
+
  You can make .pdf but .html is suitable for most purposes... .
+
+--
 
  If you want to make PDFs you'll need a latex distribution. On Windows, you need Miktex, installed here in the lab. On OSX, MacTeX. On Linux, TexLive.
 
@@ -628,7 +674,7 @@ Sys.Date()
 ```
 
 ```
-## [1] "2019-08-30"
+## [1] "2019-09-03"
 ```
 
 ---
@@ -644,7 +690,7 @@ Sys.time()
 ```
 
 ```
-## [1] "2019-08-30 14:30:59 BST"
+## [1] "2019-09-03 08:24:01 BST"
 ```
 
 ---
@@ -670,10 +716,12 @@ library(ggplot2) #loading ggplot2
 ```
 
 
-'#' to write comments in your code, which does not get read. If you know [Latex](https://www.latex-project.org/), you  can also incorporate this (as with .html)
+'#' to write comments in your code, which does not get read. 
+
+Again, if you know [Latex](https://www.latex-project.org/), you  can also incorporate this (as with .html)
 
 ---
-## R as a calculator. {.build}
+## R as a calculator.
 Use ; if you want several operations.
 
 
@@ -752,7 +800,7 @@ Many of the errors you potentially run into have to do with objects being the wr
 
  **c(...)** combine / concatenate
 
- seq(x) generate a sequence.
+ **seq(x)** generate a sequence.
 
  **[]** denotes the position of an element.
 
@@ -1013,7 +1061,7 @@ So, this is where you would read and write data,... .
 setwd("~/Dropbox/Teaching_MRes_Northumbria/Lecture1") 
 # the tilde just abbreviates the bits before
 # mostly you would use setwd("C:/Documents/Rstudio/assignment1") 
-# for windows. Dont use \ 
+# for windows. Dont use ~\ 
 # Linux: setwd("/usr/thomas/mydir")
 ```
 ---
@@ -1036,6 +1084,353 @@ write.csv(coffee_data, file= 'coffee_data.csv', row.names=FALSE)
 require(haven)
 write_sav(coffee_data, 'coffee_data.sav')
 ```
+---
+## Read in data.
+ If it is in the same folder. I have reloaded the 'haven' package.
+
+```r
+require(haven)
+coffee_data_the_return&lt;-read_sav('coffee_data.sav')
+### use the same notation as with setwd to get the path
+```
+ Even from (public) weblinks. Here in .dat format. head() shows you the first lines.
+
+```r
+require(data.table)
+mydat &lt;- fread('http://www.stats.ox.ac.uk/pub/datasets/csb/ch11b.dat')
+head(mydat)
+```
+
+```
+##    V1  V2   V3    V4 V5
+## 1:  1 307  930 36.58  0
+## 2:  2 307  940 36.73  0
+## 3:  3 307  950 36.93  0
+## 4:  4 307 1000 37.15  0
+## 5:  5 307 1010 37.23  0
+## 6:  6 307 1020 37.24  0
+```
+---
+## Some basic data analyses / manipulations. 
+
+ This follows [Whickham &amp; Grolemund (2017)](https://r4ds.had.co.nz/).
+
+ [library](https://yihui.name/en/2014/07/library-vs-require/) (instead of require - require tries to load library). I'll switch.
+
+
+```r
+library(nycflights13)
+```
+
+```r
+library(tidyverse)
+```
+
+```
+## ── Attaching packages ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──
+```
+
+```
+## ✔ ggplot2 3.2.1     ✔ purrr   0.3.2
+## ✔ tibble  2.1.3     ✔ dplyr   0.8.3
+## ✔ tidyr   0.8.3     ✔ stringr 1.4.0
+## ✔ readr   1.3.1     ✔ forcats 0.3.0
+```
+
+```
+## Warning: package 'ggplot2' was built under R version 3.5.2
+```
+
+```
+## Warning: package 'tibble' was built under R version 3.5.2
+```
+
+```
+## Warning: package 'tidyr' was built under R version 3.5.2
+```
+
+```
+## Warning: package 'purrr' was built under R version 3.5.2
+```
+
+```
+## Warning: package 'dplyr' was built under R version 3.5.2
+```
+
+```
+## Warning: package 'stringr' was built under R version 3.5.2
+```
+
+```
+## ── Conflicts ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+## ✖ dplyr::between()   masks data.table::between()
+## ✖ dplyr::filter()    masks stats::filter()
+## ✖ dplyr::first()     masks data.table::first()
+## ✖ dplyr::lag()       masks stats::lag()
+## ✖ dplyr::last()      masks data.table::last()
+## ✖ purrr::transpose() masks data.table::transpose()
+```
+---
+## Conflicts.
+ Take careful note of the conflicts message printed loading the tidyverse. 
+
+ It tells you that dplyr conflicts with some functions. 
+
+ Some of these are from base R. 
+
+ If you want to use the base version of these functions after loading dplyr, you’ll need to use their full names: stats::filter() and stats::lag()
+
+&lt;img src="http://s2.quickmeme.com/img/83/83f3188fb441ef8a727dac6715f50478910342242eb4f6e974675a3f75c044d8.jpg" width="200px" /&gt;
+---
+## NYC Flights
+ This data frame contains all 336,776 flights (**!**) that departed from New York City in 2013. 
+
+ From the US Bureau of Transportation Statistics, and is documented in ?flights.
+
+```r
+nycflights13::flights
+```
+
+```
+## # A tibble: 336,776 x 19
+##     year month   day dep_time sched_dep_time dep_delay arr_time
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;
+##  1  2013     1     1      517            515         2      830
+##  2  2013     1     1      533            529         4      850
+##  3  2013     1     1      542            540         2      923
+##  4  2013     1     1      544            545        -1     1004
+##  5  2013     1     1      554            600        -6      812
+##  6  2013     1     1      554            558        -4      740
+##  7  2013     1     1      555            600        -5      913
+##  8  2013     1     1      557            600        -3      709
+##  9  2013     1     1      557            600        -3      838
+## 10  2013     1     1      558            600        -2      753
+## # … with 336,766 more rows, and 12 more variables: sched_arr_time &lt;int&gt;,
+## #   arr_delay &lt;dbl&gt;, carrier &lt;chr&gt;, flight &lt;int&gt;, tailnum &lt;chr&gt;,
+## #   origin &lt;chr&gt;, dest &lt;chr&gt;, air_time &lt;dbl&gt;, distance &lt;dbl&gt;, hour &lt;dbl&gt;,
+## #   minute &lt;dbl&gt;, time_hour &lt;dttm&gt;
+```
+
+```r
+# Lets make it available to our enivronment.
+flights&lt;-(nycflights13::flights)
+```
+
+---
+## Tibbles.
+ Tibbles are data frames. But with some tweaks to make life a little easier.
+
+ You can turn a dataframe into a tibble with as_tibble()
+
+---
+
+## Notice anything in particular? 
+
+ **int** stands for integers.
+
+ **dbl** stands for doubles, or real numbers.
+ 
+ **chr** stands for character vectors, or strings.
+ 
+ **dttm** stands for date-times (a date + a time).
+
+---
+## But I want to see everything.
+ View()
+
+```r
+View(flights)
+```
+&lt;img src="https://pics.me.me/this-is-bran-bran-knows-everything-yet-he-does-not-27295932.png" width="300px" /&gt;
+
+---
+## 'dplyr' basics.
+ Pick observations by their values: **filter()**.
+
+ Reorder the rows: **arrange()**.
+
+ Pick variables by their names **select()**.
+
+ Create new variables with functions of existing variables **mutate()**.
+
+ Collapse many values down to a single summary **summarise()**.
+---
+## Data cleaning... 
+ Let's filter out some missings for departure delay (dep_delay)
+
+ Here we make a _new_ dataset
+
+&lt;img src="https://i.pinimg.com/736x/30/66/ac/3066ac69ae68ac200ace0ca8fe3882c3--friday-memes-broken-city.jpg" width="300px" /&gt;
+
+---
+## filter() 
+ 
+
+```r
+# notice '!' for 'not'.
+flights_no_miss&lt;-filter(flights, dep_delay!='NA')
+```
+
+&lt;img src="https://i.imgflip.com/13ui7g.jpg" width="300px" /&gt;
+---
+## Logical operations.
+ &amp; is “and”, | is “or”, and ! is “not”
+&lt;img src="transform-logical.png" width="500px" /&gt;
+---
+## = vs. ==
+ When filtering you'll need: the standard suite: &gt;, &gt;=, &lt;, &lt;=, != (not equal), and == (equal).
+
+ Common mistake: = instead of ==
+---
+## Floating point numbers
+ floating point numbers are a problem. Computers cannot store infinite numbers of digits.
+
+```r
+sqrt(3) ^ 2 == 3
+```
+
+```
+## [1] FALSE
+```
+
+```r
+1/98 * 98 == 1
+```
+
+```
+## [1] FALSE
+```
+&lt;img src="floating_cat.jpg" width="175px" /&gt;
+---
+## Solution: near()
+
+```r
+near(sqrt(3) ^ 2,  3)
+```
+
+```
+## [1] TRUE
+```
+
+```r
+near(1/98*98, 1)
+```
+
+```
+## [1] TRUE
+```
+
+---
+## Basic statistics.
+Let's look at the delays with departure (dep_delay).
+
+Note the dollar sign ($) for selecting the column
+
+```r
+mean(flights_no_miss$dep_delay)
+```
+
+```
+## [1] 12.63907
+```
+
+```r
+median(flights_no_miss$dep_delay)
+```
+
+```
+## [1] -2
+```
+---
+## Measures of variation {.build}
+Standard deviation and Standard error (of the mean).
+
+```r
+sd(flights_no_miss$dep_delay)
+```
+
+```
+## [1] 40.21006
+```
+
+```r
+var(flights_no_miss$dep_delay)
+```
+
+```
+## [1] 1616.849
+```
+
+```r
+se&lt;-sd(flights_no_miss$dep_delay)/sqrt(length(flights$dep_delay)) 
+se # standard error
+```
+
+```
+## [1] 0.06928898
+```
+---
+## 95% Confidence interval.
+
+```r
+# 95 CI
+UL&lt;- (mean(flights_no_miss$dep_delay) + 1.96*se)
+LL&lt;- (mean(flights_no_miss$dep_delay) - 1.96*se)
+UL
+```
+
+```
+## [1] 12.77488
+```
+
+```r
+LL
+```
+
+```
+## [1] 12.50326
+```
+
+&lt;img src="CI.jpg" width="150px" /&gt;
+---
+##Five number summary.
+ minimum, first quartile (Q1), median, third quartile (Q3), maximum.
+
+```r
+fivenum(flights_no_miss$dep_delay)
+```
+
+```
+## [1]  -43   -5   -2   11 1301
+```
+
+```r
+summary(flights_no_miss$dep_delay)
+```
+
+```
+##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##  -43.00   -5.00   -2.00   12.64   11.00 1301.00
+```
+---
+## Interquartile range
+ IQR: Q3 - Q1. Another measure of variation.
+
+```r
+IQR(flights_no_miss$dep_delay)
+```
+
+```
+## [1] 16
+```
+---
+## Boxplot
+
+```r
+boxplot(flights_no_miss$dep_delay)
+```
+
+![](Meta_analysis_1_files/figure-html/unnamed-chunk-57-1.png)&lt;!-- --&gt;
 
 ---
 ## First useful thing?
@@ -1063,8 +1458,8 @@ prisma(found = 750,
 ## Output chart
 
 &lt;div class="figure" style="text-align: center"&gt;
-<div id="htmlwidget-3558701c63a966135df3" style="width:450px;height:504px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-3558701c63a966135df3">{"x":{"diagram":"digraph prisma {\n    node [shape=\"box\", fontsize = 10];\n    graph [splines=ortho, nodesep=1, dpi = 72]\n    a -> nodups;\n    b -> nodups;\n    a [label=\"Records identified through\ndatabase searching\n(n = 750)\"];\n    b [label=\"Additional records identified\nthrough other sources\n(n = 123)\"]\n    nodups -> incex;\n    nodups [label=\"Records after duplicates removed\n(n = 776)\"];\n    incex -> {ex; ft}\n    incex [label=\"Records screened\n(n = 776)\"];\n    ex [label=\"Records excluded\n(n = 13)\"];\n    {rank=same; incex ex}\n    ft -> {qual; ftex};\n    ft [label=\"Full-text articles assessed\nfor eligibility\n(n = 763)\"];\n    {rank=same; ft ftex}\n    ftex [label=\"Full-text articles excluded,\nwith reasons\n(n = 17)\"];\n    qual -> quant\n    qual [label=\"Studies included in qualitative synthesis\n(n = 746)\"];\n    quant [label=\"Studies included in\nquantitative synthesis\n(meta-analysis)\n(n = 319)\"];\n  }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-b8fbb58fa6be54485e5f" style="width:350px;height:504px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b8fbb58fa6be54485e5f">{"x":{"diagram":"digraph prisma {\n    node [shape=\"box\", fontsize = 10];\n    graph [splines=ortho, nodesep=1, dpi = 72]\n    a -> nodups;\n    b -> nodups;\n    a [label=\"Records identified through\ndatabase searching\n(n = 750)\"];\n    b [label=\"Additional records identified\nthrough other sources\n(n = 123)\"]\n    nodups -> incex;\n    nodups [label=\"Records after duplicates removed\n(n = 776)\"];\n    incex -> {ex; ft}\n    incex [label=\"Records screened\n(n = 776)\"];\n    ex [label=\"Records excluded\n(n = 13)\"];\n    {rank=same; incex ex}\n    ft -> {qual; ftex};\n    ft [label=\"Full-text articles assessed\nfor eligibility\n(n = 763)\"];\n    {rank=same; ft ftex}\n    ftex [label=\"Full-text articles excluded,\nwith reasons\n(n = 17)\"];\n    qual -> quant\n    qual [label=\"Studies included in qualitative synthesis\n(n = 746)\"];\n    quant [label=\"Studies included in\nquantitative synthesis\n(meta-analysis)\n(n = 319)\"];\n  }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 &lt;p class="caption"&gt;PRISMA Flow chart&lt;/p&gt;
 &lt;/div&gt;
 ---
@@ -1106,7 +1501,15 @@ Twitter: @tvpollet
 
 
 ---
-## References and further reading
+## References and further reading (errors = blame RefManageR)
+
+&lt;p&gt;&lt;cite&gt;Aert, R. C. M. van, J. M. Wicherts, and M. A. L. M. van
+Assen
+(2016).
+&amp;ldquo;Conducting Meta-Analyses Based on p Values: Reservations and Recommendations for Applying p-Uniform and p-Curve&amp;rdquo;.
+In: &lt;em&gt;Perspectives on Psychological Science&lt;/em&gt; 11.5, pp. 713-729.
+DOI: &lt;a href="https://doi.org/10.1177/1745691616650874"&gt;10.1177/1745691616650874&lt;/a&gt;.
+eprint: https://doi.org/10.1177/1745691616650874.&lt;/cite&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;cite&gt;Aloe, A. M. and C. G. Thompson
 (2013).
@@ -1114,6 +1517,12 @@ Twitter: @tvpollet
 In: &lt;em&gt;Journal of the Society for Social Work and Research&lt;/em&gt; 4.4, pp. 390-405.
 DOI: &lt;a href="https://doi.org/10.5243/jsswr.2013.24"&gt;10.5243/jsswr.2013.24&lt;/a&gt;.
 eprint: https://doi.org/10.5243/jsswr.2013.24.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Assink, M. and C. J. Wibbelink
+(2016).
+&amp;ldquo;Fitting Three-Level Meta-Analytic Models in R: A Step-by-Step Tutorial&amp;rdquo;.
+In: &lt;em&gt;The Quantitative Methods for Psychology&lt;/em&gt; 12.3, pp. 154-174.
+ISSN: 2292-1354.&lt;/cite&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;cite&gt;Barendregt, J. J., S. A. Doi, Y. Y. Lee, et al.
 (2013).
@@ -1127,6 +1536,8 @@ DOI: &lt;a href="https://doi.org/10.1136/jech-2013-203104"&gt;10.1136/jech-2013-
 &amp;ldquo;The Synthesis of Regression Slopes in Meta-Analysis&amp;rdquo;.
 In: &lt;em&gt;Statistical science&lt;/em&gt; 22.3, pp. 414-429.
 ISSN: 0883-4237.&lt;/cite&gt;&lt;/p&gt;
+---
+## More refs 1.
 
 &lt;p&gt;&lt;cite&gt;Borenstein, M., L. V. Hedges, J. P. Higgins, et al.
 (2009).
@@ -1139,8 +1550,6 @@ ISBN: 1-119-96437-7.&lt;/cite&gt;&lt;/p&gt;
 &lt;em&gt;Model Selection and Multimodel Inference: A Practical Information-Theoretic Approach&lt;/em&gt;.
 New York, NY: Springer.
 ISBN: 0-387-95364-7.&lt;/cite&gt;&lt;/p&gt;
----
-## More refs 1.
 
 &lt;p&gt;&lt;cite&gt;Burnham, K. P. and D. R. Anderson
 (2004).
@@ -1149,11 +1558,33 @@ In: &lt;em&gt;Sociological Methods &amp;amp; Research&lt;/em&gt; 33.2, pp. 261-3
 ISSN: 0049-1241.
 DOI: &lt;a href="https://doi.org/10.1177/0049124104268644"&gt;10.1177/0049124104268644&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;cite&gt;Carter, E. C., F. D. Schönbrodt, W. M. Gervais, et al.
+(2019).
+&amp;ldquo;Correcting for Bias in Psychology: A Comparison of Meta-Analytic Methods&amp;rdquo;.
+In: &lt;em&gt;Advances in Methods and Practices in Psychological Science&lt;/em&gt; 2.2, pp. 115-144.
+DOI: &lt;a href="https://doi.org/10.1177/2515245919847196"&gt;10.1177/2515245919847196&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;cite&gt;Chen, D. D. and K. E. Peace
 (2013).
 &lt;em&gt;Applied Meta-Analysis with R&lt;/em&gt;.
 Chapman and Hall/CRC.
 ISBN: 1-4665-0600-8.&lt;/cite&gt;&lt;/p&gt;
+
+---
+## More refs 2.
+
+&lt;p&gt;&lt;cite&gt;Cheung, M. W.
+(2015a).
+&amp;ldquo;metaSEM: An R Package for Meta-Analysis Using Structural Equation Modeling&amp;rdquo;.
+In: &lt;em&gt;Frontiers in Psychology&lt;/em&gt; 5, p. 1521.
+ISSN: 1664-1078.
+DOI: &lt;a href="https://doi.org/10.3389/fpsyg.2014.01521"&gt;10.3389/fpsyg.2014.01521&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Cheung, M. W.
+(2015b).
+&lt;em&gt;Meta-Analysis: A Structural Equation Modeling Approach&lt;/em&gt;.
+New York, NY: John Wiley &amp;amp; Sons.
+ISBN: 1-119-99343-1.&lt;/cite&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;cite&gt;Cooper, H.
 (2010).
@@ -1176,7 +1607,7 @@ ISSN: 1433806886.
 DOI: &lt;a href="https://doi.org/10.1037/a0015565"&gt;10.1037/a0015565&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
 
 ---
-## More refs 2.
+## More refs 3.
 
 &lt;p&gt;&lt;cite&gt;Crawley, M. J.
 (2013).
@@ -1191,6 +1622,14 @@ In: &lt;em&gt;Psychological Science&lt;/em&gt; 25.1, pp. 7-29.
 ISSN: 0956-7976.
 DOI: &lt;a href="https://doi.org/10.1177/0956797613504966"&gt;10.1177/0956797613504966&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;cite&gt;Dickersin, K.
+(2005).
+&amp;ldquo;Publication Bias: Recognizing the Problem, Understanding Its Origins and Scope, and Preventing Harm&amp;rdquo;.
+In: 
+&lt;em&gt;Publication Bias in Meta-Analysis Prevention, Assessment and Adjustments&lt;/em&gt;.
+Ed. by H. R. Rothstein, A. J. Sutton and M. Borenstein.
+Chichester, UK: John Wiley.&lt;/cite&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;cite&gt;Fisher, R. A.
 (1946).
 &lt;em&gt;Statistical Methods for Research Workers&lt;/em&gt;.
@@ -1204,15 +1643,22 @@ In: &lt;em&gt;Journal of School Psychology&lt;/em&gt; 53.1, pp. 25-44.
 ISSN: 0022-4405.
 DOI: &lt;a href="https://doi.org/10.1016/j.jsp.2014.10.002"&gt;10.1016/j.jsp.2014.10.002&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
 
+---
+## More refs 4.
+
+&lt;p&gt;&lt;cite&gt;Galbraith, R. F.
+(1994).
+&amp;ldquo;Some Applications of Radial Plots&amp;rdquo;.
+In: &lt;em&gt;Journal of the American Statistical Association&lt;/em&gt; 89.428, pp. 1232-1242.
+ISSN: 0162-1459.
+DOI: &lt;a href="https://doi.org/10.1080/01621459.1994.10476864"&gt;10.1080/01621459.1994.10476864&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;cite&gt;Glass, G. V.
 (1976).
 &amp;ldquo;Primary, Secondary, and Meta-Analysis of Research&amp;rdquo;.
 In: &lt;em&gt;Educational researcher&lt;/em&gt; 5.10, pp. 3-8.
 ISSN: 0013-189X.
 DOI: &lt;a href="https://doi.org/10.3102/0013189X005010003"&gt;10.3102/0013189X005010003&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
-
----
-## More refs 3.
 
 &lt;p&gt;&lt;cite&gt;Goh, J. X., J. A. Hall, and R. Rosenthal
 (2016).
@@ -1221,10 +1667,28 @@ In: &lt;em&gt;Social and Personality Psychology Compass&lt;/em&gt; 10.10, pp. 53
 ISSN: 1751-9004.
 DOI: &lt;a href="https://doi.org/10.1111/spc3.12267"&gt;10.1111/spc3.12267&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;cite&gt;Harrell, F. E.
+(2015).
+&lt;em&gt;Regression Modeling Strategies&lt;/em&gt;.
+2nd.
+Springer Series in Statistics.
+New York, NY: Springer New York.
+ISBN: 978-1-4419-2918-1.
+DOI: &lt;a href="https://doi.org/10.1007/978-1-4757-3462-1"&gt;10.1007/978-1-4757-3462-1&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;cite&gt;Harrer, M., P. Cuijpers, and D. D. Ebert
 (2019).
 &lt;em&gt;Doing Meta-Analysis in R: A Hands-on Guide&lt;/em&gt;.
 https://bookdown.org/MathiasHarrer/Doing\_ Meta\_ Analysis\_ in\_ R/.&lt;/cite&gt;&lt;/p&gt;
+
+---
+## More refs 5.
+
+&lt;p&gt;&lt;cite&gt;Hartung, J. and G. Knapp
+(2001).
+&amp;ldquo;On Tests of the Overall Treatment Effect in Meta-Analysis with Normally Distributed Responses&amp;rdquo;.
+In: &lt;em&gt;Statistics in Medicine&lt;/em&gt; 20.12, pp. 1771-1782.
+DOI: &lt;a href="https://doi.org/10.1002/sim.791"&gt;10.1002/sim.791&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;cite&gt;Hayes, A. F. and K. Krippendorff
 (2007).
@@ -1239,6 +1703,13 @@ DOI: &lt;a href="https://doi.org/10.1080/19312450709336664"&gt;10.1080/193124507
 In: &lt;em&gt;Journal of Educational Statistics&lt;/em&gt; 6.2, pp. 107-128.
 DOI: &lt;a href="https://doi.org/10.3102/10769986006002107"&gt;10.3102/10769986006002107&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;cite&gt;Hedges, L. V.
+(1984).
+&amp;ldquo;Estimation of Effect Size under Nonrandom Sampling: The Effects of Censoring Studies Yielding Statistically Insignificant Mean Differences&amp;rdquo;.
+In: &lt;em&gt;Journal of Educational Statistics&lt;/em&gt; 9.1, pp. 61-85.
+ISSN: 0362-9791.
+DOI: &lt;a href="https://doi.org/10.3102/10769986009001061"&gt;10.3102/10769986009001061&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
 &lt;p&gt;&lt;cite&gt;Hedges, L. V. and I. Olkin
 (1980).
 &amp;ldquo;Vote-Counting Methods in Research Synthesis.&amp;rdquo;
@@ -1247,7 +1718,26 @@ ISSN: 1939-1455.
 DOI: &lt;a href="https://doi.org/10.1037/0033-2909.88.2.359"&gt;10.1037/0033-2909.88.2.359&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
 
 ---
-## More refs 4.
+## More refs 6.
+
+&lt;p&gt;&lt;cite&gt;Higgins, J. P. T. and S. G. Thompson
+(2002).
+&amp;ldquo;Quantifying Heterogeneity in a Meta-Analysis&amp;rdquo;.
+In: &lt;em&gt;Statistics in Medicine&lt;/em&gt; 21.11, pp. 1539-1558.
+DOI: &lt;a href="https://doi.org/10.1002/sim.1186"&gt;10.1002/sim.1186&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Higgins, J. P. T., S. G. Thompson, J. J. Deeks, et al.
+(2003).
+&amp;ldquo;Measuring Inconsistency in Meta-Analyses&amp;rdquo;.
+In: &lt;em&gt;BMJ&lt;/em&gt; 327.7414, pp. 557-560.
+ISSN: 0959-8138.
+DOI: &lt;a href="https://doi.org/10.1136/bmj.327.7414.557"&gt;10.1136/bmj.327.7414.557&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Higgins, J., S. Thompson, J. Deeks, et al.
+(2002).
+&amp;ldquo;Statistical Heterogeneity in Systematic Reviews of Clinical Trials: A Critical Appraisal of Guidelines and Practice&amp;rdquo;.
+In: &lt;em&gt;Journal of Health Services Research &amp;amp; Policy&lt;/em&gt; 7.1, pp. 51-61.
+DOI: &lt;a href="https://doi.org/10.1258/1355819021927674"&gt;10.1258/1355819021927674&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;cite&gt;Hirschenhauser, K. and R. F. Oliveira
 (2006).
@@ -1255,6 +1745,27 @@ DOI: &lt;a href="https://doi.org/10.1037/0033-2909.88.2.359"&gt;10.1037/0033-290
 In: &lt;em&gt;Animal Behaviour&lt;/em&gt; 71.2, pp. 265-277.
 ISSN: 0003-3472.
 DOI: &lt;a href="https://doi.org/10.1016/j.anbehav.2005.04.014"&gt;10.1016/j.anbehav.2005.04.014&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Ioannidis, J. P.
+(2008).
+&amp;ldquo;Why Most Discovered True Associations Are Inflated&amp;rdquo;.
+In: &lt;em&gt;Epidemiology&lt;/em&gt; 19.5, pp. 640-648.
+ISSN: 1044-3983.&lt;/cite&gt;&lt;/p&gt;
+---
+## More refs 7.
+
+&lt;p&gt;&lt;cite&gt;Jackson, D., M. Law, G. Rücker, et al.
+(2017).
+&amp;ldquo;The Hartung-Knapp Modification for Random-Effects Meta-Analysis: A Useful Refinement but Are There Any Residual Concerns?&amp;rdquo;
+In: &lt;em&gt;Statistics in Medicine&lt;/em&gt; 36.25, pp. 3923-3934.
+DOI: &lt;a href="https://doi.org/10.1002/sim.7411"&gt;10.1002/sim.7411&lt;/a&gt;.
+eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/sim.7411.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Jacobs, P. and W. Viechtbauer
+(2016).
+&amp;ldquo;Estimation of the Biserial Correlation and Its Sampling Variance for Use in Meta-Analysis&amp;rdquo;.
+In: &lt;em&gt;Research Synthesis Methods&lt;/em&gt; 8.2, pp. 161-180.
+DOI: &lt;a href="https://doi.org/10.1002/jrsm.1218"&gt;10.1002/jrsm.1218&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;cite&gt;Koricheva, J., J. Gurevitch, and K. Mengersen
 (2013).
@@ -1272,14 +1783,29 @@ ISBN: 0-691-13729-3.&lt;/cite&gt;&lt;/p&gt;
 London: SAGE publications, Inc.
 ISBN: 0-7619-2167-2.&lt;/cite&gt;&lt;/p&gt;
 
+---
+## More refs 8.
+
 &lt;p&gt;&lt;cite&gt;Littell, J. H., J. Corcoran, and V. Pillai
 (2008).
 &lt;em&gt;Systematic Reviews and Meta-Analysis&lt;/em&gt;.
 Oxford, UK: Oxford University Press.
 ISBN: 0-19-532654-7.&lt;/cite&gt;&lt;/p&gt;
 
----
-## More refs 5.
+&lt;p&gt;&lt;cite&gt;McShane, B. B., U. Böckenholt, and K. T. Hansen
+(2016).
+&amp;ldquo;Adjusting for Publication Bias in Meta-Analysis: An Evaluation of Selection Methods and Some Cautionary Notes&amp;rdquo;.
+In: &lt;em&gt;Perspectives on Psychological Science&lt;/em&gt; 11.5, pp. 730-749.
+DOI: &lt;a href="https://doi.org/10.1177/1745691616662243"&gt;10.1177/1745691616662243&lt;/a&gt;.
+eprint: https://doi.org/10.1177/1745691616662243.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Mengersen, K., C. Schmidt, M. Jennions, et al.
+(2013).
+&amp;ldquo;Statistical Models and Approaches to Inference&amp;rdquo;.
+In: 
+&lt;em&gt;Handbook of Meta-Analysis in Ecology and Evolution&lt;/em&gt;.
+Ed. by Koricheva, J, J. Gurevitch and Mengersen, Kerrie.
+Princeton, NJ: Princeton University Press, pp. 89-107.&lt;/cite&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;cite&gt;Methley, A. M., S. Campbell, C. Chew-Graham, et al.
 (2014).
@@ -1296,12 +1822,29 @@ In: &lt;em&gt;Journal of Affective Disorders&lt;/em&gt; 239, pp. 328-338.
 ISSN: 0165-0327.
 DOI: &lt;a href="https://doi.org/10.1016/j.jad.2018.07.027"&gt;10.1016/j.jad.2018.07.027&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
 
+---
+## More refs 9.
+
 &lt;p&gt;&lt;cite&gt;Nakagawa, S., D. W. A. Noble, A. M. Senior, et al.
 (2017).
 &amp;ldquo;Meta-Evaluation of Meta-Analysis: Ten Appraisal Questions for Biologists&amp;rdquo;.
 In: &lt;em&gt;BMC Biology&lt;/em&gt; 15.1, p. 18.
 ISSN: 1741-7007.
 DOI: &lt;a href="https://doi.org/10.1186/s12915-017-0357-7"&gt;10.1186/s12915-017-0357-7&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Pastor, D. A. and R. A. Lazowski
+(2018).
+&amp;ldquo;On the Multilevel Nature of Meta-Analysis: A Tutorial, Comparison of Software Programs, and Discussion of Analytic Choices&amp;rdquo;.
+In: &lt;em&gt;Multivariate Behavioral Research&lt;/em&gt; 53.1, pp. 74-89.
+DOI: &lt;a href="https://doi.org/10.1080/00273171.2017.1365684"&gt;10.1080/00273171.2017.1365684&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Poole, C. and S. Greenland
+(1999).
+&amp;ldquo;Random-Effects Meta-Analyses Are Not Always Conservative&amp;rdquo;.
+In: &lt;em&gt;American Journal of Epidemiology&lt;/em&gt; 150.5, pp. 469-475.
+ISSN: 0002-9262.
+DOI: &lt;a href="https://doi.org/10.1093/oxfordjournals.aje.a010035"&gt;10.1093/oxfordjournals.aje.a010035&lt;/a&gt;.
+eprint: http://oup.prod.sis.lan/aje/article-pdf/150/5/469/286690/150-5-469.pdf.&lt;/cite&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;cite&gt;Popper, K.
 (1959).
@@ -1316,12 +1859,19 @@ In: &lt;em&gt;Biological conservation&lt;/em&gt; 132.4, pp. 409-423.
 ISSN: 0006-3207.&lt;/cite&gt;&lt;/p&gt;
 
 ---
-## More refs 6.
+## More refs 10.
 
 &lt;p&gt;&lt;cite&gt;Rosenberg, M. S., H. R. Rothstein, and J. Gurevitch
 (2013).
 &amp;ldquo;Effect Sizes: Conventional Choices and Calculations&amp;rdquo;.
 In: &lt;em&gt;Handbook of Meta-analysis in Ecology and Evolution&lt;/em&gt;, pp. 61-71.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Röver, C., G. Knapp, and T. Friede
+(2015).
+&amp;ldquo;Hartung-Knapp-Sidik-Jonkman Approach and Its Modification for Random-Effects Meta-Analysis with Few Studies&amp;rdquo;.
+In: &lt;em&gt;BMC Medical Research Methodology&lt;/em&gt; 15.1, p. 99.
+ISSN: 1471-2288.
+DOI: &lt;a href="https://doi.org/10.1186/s12874-015-0091-1"&gt;10.1186/s12874-015-0091-1&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;cite&gt;Schwarzer, G., J. R. Carpenter, and G. Rücker
 (2015).
@@ -1342,14 +1892,15 @@ In: &lt;em&gt;Psychological Science&lt;/em&gt; 22.11, pp. 1359-1366.
 ISSN: 0956-7976.
 DOI: &lt;a href="https://doi.org/10.1177/0956797611417632"&gt;10.1177/0956797611417632&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
 
+---
+## More refs 11.
+
 &lt;p&gt;&lt;cite&gt;Simonsohn, U., L. D. Nelson, and J. P. Simmons
 (2014).
 &amp;ldquo;P-Curve: A Key to the File-Drawer.&amp;rdquo;
 In: &lt;em&gt;Journal of Experimental Psychology: General&lt;/em&gt; 143.2, pp. 534-547.
 ISSN: 1939-2222.
 DOI: &lt;a href="https://doi.org/10.1037/a0033242"&gt;10.1037/a0033242&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
----
-## More refs 7.
 
 &lt;p&gt;&lt;cite&gt;Sterne, J. A. C., A. J. Sutton, J. P. A. Ioannidis, et al.
 (2011).
@@ -1357,6 +1908,14 @@ DOI: &lt;a href="https://doi.org/10.1037/a0033242"&gt;10.1037/a0033242&lt;/a&gt;
 In: &lt;em&gt;BMJ&lt;/em&gt; 343.jul22 1, pp. d4002-d4002.
 ISSN: 0959-8138.
 DOI: &lt;a href="https://doi.org/10.1136/bmj.d4002"&gt;10.1136/bmj.d4002&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Veroniki, A. A., D. Jackson, W. Viechtbauer, et al.
+(2016).
+&amp;ldquo;Methods to Estimate the Between-Study Variance and Its Uncertainty in Meta-Analysis&amp;rdquo;.
+Eng.
+In: &lt;em&gt;Research synthesis methods&lt;/em&gt; 7.1, pp. 55-79.
+ISSN: 1759-2887.
+DOI: &lt;a href="https://doi.org/10.1002/jrsm.1164"&gt;10.1002/jrsm.1164&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;cite&gt;Viechtbauer, W.
 (2015).
@@ -1367,6 +1926,9 @@ DOI: &lt;a href="https://doi.org/10.1136/bmj.d4002"&gt;10.1136/bmj.d4002&lt;/a&g
 (2017).
 &lt;em&gt;Syllabus for Course: &amp;ldquo;Meta-Analysis in Survey Methodology&amp;quot;, 6th Summer Workshop (GESIS)&lt;/em&gt;.&lt;/cite&gt;&lt;/p&gt;
 
+---
+## More refs 12.
+
 &lt;p&gt;&lt;cite&gt;Wickham, H. and G. Grolemund
 (2016).
 &lt;em&gt;R for Data Science&lt;/em&gt;.
@@ -1375,6 +1937,33 @@ Sebastopol, CA: O'Reilly..&lt;/cite&gt;&lt;/p&gt;
 &lt;p&gt;&lt;cite&gt;Wiernik, B.
 (2015).
 &lt;em&gt;A Brief Introduction to Meta-Analysis&lt;/em&gt;.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Wiksten, A., G. Rücker, and G. Schwarzer
+(2016).
+&amp;ldquo;Hartung-Knapp Method Is Not Always Conservative Compared with Fixed-Effect Meta-Analysis&amp;rdquo;.
+In: &lt;em&gt;Statistics in Medicine&lt;/em&gt; 35.15, pp. 2503-2515.
+DOI: &lt;a href="https://doi.org/10.1002/sim.6879"&gt;10.1002/sim.6879&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Wingfield, J. C., R. E. Hegner, A. M. Dufty Jr, et al.
+(1990).
+&amp;ldquo;The&amp;quot; Challenge Hypothesis&amp;quot;: Theoretical Implications for Patterns of Testosterone Secretion, Mating Systems, and Breeding Strategies&amp;rdquo;.
+In: &lt;em&gt;American Naturalist&lt;/em&gt; 136, pp. 829-846.
+ISSN: 0003-0147.&lt;/cite&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;cite&gt;Yeaton, W. H. and P. M. Wortman
+(1993).
+&amp;ldquo;On the Reliability of Meta-Analytic Reviews: The Role of Intercoder Agreement&amp;rdquo;.
+In: &lt;em&gt;Evaluation Review&lt;/em&gt; 17.3, pp. 292-309.
+ISSN: 0193-841X.
+DOI: &lt;a href="https://doi.org/10.1177/0193841X9301700303"&gt;10.1177/0193841X9301700303&lt;/a&gt;.&lt;/cite&gt;&lt;/p&gt;
+
+---
+## More refs 13.
+
+
+
+---
+## More refs 14.
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
