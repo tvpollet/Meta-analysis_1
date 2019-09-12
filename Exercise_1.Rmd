@@ -1,0 +1,120 @@
+---
+title: "Solution Session 1"
+output: html_document
+author: "Dr. Thomas Pollet, Northumbria University (thomas.pollet@northumbria.ac.uk)"
+date: '`r format(Sys.Date())` | [disclaimer](http://tvpollet.github.io/disclaimer)'
+---
+
+## R Markdown for Lecture 1 exercise.
+
+ Load the flights dataset.
+
+ Calculate the mean delay in arrival for Delta Airlines (DL) (use **filter()**)
+
+ Calculate the associated 95% confidence interval.
+
+ Do the same for United Airlines (UA) and compare the two. Do their confidence intervals overlap?
+
+ Calculate the mode for the delay in arrival for at JFK airport.
+
+ save a dataset as .sav with only departing flights from JFK airport.
+
+
+### Load the flights data.
+
+```{r}
+library(nycflights13)
+flights<-nycflights13::flights
+```
+
+### Select just the delta flights
+
+```{r}
+require(dplyr)
+delta<-filter(flights, carrier=="DL")
+```
+
+### Means 
+
+```{r}
+#remove the missings
+# chose to work in same dataset. (for safety reasons you could make a new one!)
+delta<-filter(delta, arr_delay!='NA')
+mean(delta$arr_delay)
+# store it
+mean_delta<-mean(delta$arr_delay)
+```
+
+### 95% CI
+
+First get the 'se'
+```{r}
+se_delta<-sd(delta$arr_delay)/sqrt(length(delta$arr_delay))
+se_delta
+```
+
+Now calculate 95%CI.
+
+```{r}
+UL_delta<- (mean_delta + 1.96*se_delta)
+LL_delta<- (mean_delta - 1.96*se_delta)
+UL_delta
+LL_delta
+```
+
+### United airlines.
+
+All in one go
+
+```{r}
+require(dplyr)
+united<-filter(flights, carrier=="UA")
+united<-filter(united, arr_delay!='NA')
+mean(united$arr_delay)
+# store it
+mean_united<-mean(united$arr_delay)
+se_united<-sd(united$arr_delay)/sqrt(length(united$arr_delay))
+se_united
+UL_united<- (mean_united + 1.96*se_united)
+LL_united<- (mean_united - 1.96*se_united)
+UL_united
+LL_united
+
+```
+
+### Conclusion: Delta vs. United.
+
+The 95%CI's do not overlap. United [3.22 to 3.89] is significantly slower in terms of arrival time than Delta [1.25 to 2.04].
+
+### JFK airport
+
+#### Make a dataset.
+
+```{r}
+jfk<- filter(flights, origin=="JFK")
+# remove the missings.
+jfk<- filter(jfk, arr_delay!='NA')
+```
+
+#### Calculate the mode.
+
+```{r}
+library(modeest)
+mlv(jfk$arr_delay,  method='mfv')
+```
+
+The mode is  -13. The most common value in the dataset is thus 13 minutes early!
+
+#### Write away the data.
+
+```{r}
+require(haven)
+write_sav(jfk, 'jfk.sav')
+```
+
+The end.
+
+```{r, out.width = "400px", echo=FALSE}
+knitr::include_graphics("https://i.imgur.com/60CsJQf.gif")
+```
+

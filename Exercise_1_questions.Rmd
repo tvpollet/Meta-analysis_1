@@ -1,0 +1,20 @@
+---
+title: "Exercise Session 1"
+output: html_document
+author: "Dr. Thomas Pollet, Northumbria University (thomas.pollet@northumbria.ac.uk)"
+date: '`r format(Sys.Date())` | [disclaimer](http://tvpollet.github.io/disclaimer)'
+---
+
+## R Markdown for Session 1 exercise.
+
+ Load the flights dataset.
+
+ Calculate the mean delay in arrival for Delta Airlines (DL) (use **filter()**)
+
+ Calculate the associated 95% confidence interval.
+
+ Do the same for United Airlines (UA) and compare the two. Do their confidence intervals overlap?
+
+ Calculate the mode for the delay in arrival for at JFK airport.
+
+ save a dataset as .sav with only departing flights from JFK airport.
