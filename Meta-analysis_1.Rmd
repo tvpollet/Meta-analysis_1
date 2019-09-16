@@ -331,7 +331,7 @@ knitr::include_graphics("trash.gif") # meme generator.
 * Meta-analyses require large number of studies and/or large sample sizes --> False. Sometimes just 2(!)
 
 ```{r, out.width = "300px", echo=FALSE, fig.align='center'}
-knitr::include_graphics("x-files.gif") # meme generator. giphy
+knitr::include_graphics("X-files.gif") # meme generator. giphy
 ```
 
 ---
@@ -393,7 +393,7 @@ Procedural variations can lead to relevant/irrelevant or included but tested for
 
 **P**opulation **I**ntervention **C**omparison **O**utcome **S**tudy Type
 
-**S**ample **P**henomon of **I**nterest **D**esign **E** **R**esearch type ([Methley et al. 2014](https://bmchealthservres.biomedcentral.com/articles/10.1186/s12913-014-0579-0))
+**S**ample **P**henomon of **I**nterest **D**esign **E**valuation **R**esearch type ([Methley et al. 2014](https://bmchealthservres.biomedcentral.com/articles/10.1186/s12913-014-0579-0))
 
 ---
 ## Searching the literature
@@ -1215,7 +1215,7 @@ knitr::include_graphics("https://media.giphy.com/media/3ohzdRoOp1FUYbtGDu/giphy.
 
 * My colleagues who helped me with regards to meta-analysis specifically: Nexhmedin Morina, Stijn Peperkoorn, Gert Stulp, Mirre Simons, Johannes Honekopp.
 
-* [HBES](www.hbes.com) for funding this. Those who have funded me (not these studies per se): [NWO](www.nwo.nl), [Templeton](www.templeton.org), [NIAS](http://nias.knaw.nl).
+* [HBES](www.hbes.com) and [LECH](https://www.lechufrn.com/) for funding this workshop. Those who have funded me (not these studies per se): [NWO](www.nwo.nl), [Templeton](www.templeton.org), [NIAS](http://nias.knaw.nl).
 
 * You for listening!
 
