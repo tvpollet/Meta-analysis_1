@@ -232,7 +232,7 @@ What is a systematic review (/meta-analysis) for?
 
 * Describe the existence (or prevalence) of phenomenon (e.g., [prevalence of PTSD](https://tvpollet.github.io/pdfs/Morina_et_al_2018.pdf), Morina et al. (2018))
 
-* Exploration: explore a research (e.g., compile a list of risks for job loss)
+* Exploration: explore a research question (e.g., compile a list of risks for job loss)
 
 * Formally evaluate hypotheses (e.g., "the challenge hypothesis" ([Wingfield et al., 1990](https://www.reed.edu/biology/professors/srenn/pages/teaching/2008_syllabus/2008_readings/9_wingfield_etal_1990.pdf)) - [Varying androgen responses to mating, breeding or territorial behaviour in avian males?](https://www.sciencedirect.com/science/article/pii/S0003347205003623)
 
@@ -320,7 +320,7 @@ knitr::include_graphics("limitation.jpg") # meme generator.
 * Missing data / publication bias: Affects _any_ kind of research. Meta-analysis allows for methods addressing these problems.
 
 ```{r, out.width = "300px", echo=FALSE, fig.align='center'}
-knitr::include_graphics("https://media.giphy.com/media/yRNSxsl1rJEwU/giphy.gif") # meme generator.
+knitr::include_graphics("trash.gif") # meme generator.
 ```
 
 ---
@@ -331,7 +331,7 @@ knitr::include_graphics("https://media.giphy.com/media/yRNSxsl1rJEwU/giphy.gif")
 * Meta-analyses require large number of studies and/or large sample sizes --> False. Sometimes just 2(!)
 
 ```{r, out.width = "300px", echo=FALSE, fig.align='center'}
-knitr::include_graphics("https://media.giphy.com/media/3oEdvddejaTWNpNCTK/giphy.gif") # meme generator.
+knitr::include_graphics("x-files.gif") # meme generator. giphy
 ```
 
 ---
